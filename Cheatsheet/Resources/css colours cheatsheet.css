@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Monaco, monospace;
+}
+
+body {
+  background-color: RGBA(255, 0, 0, 0.1);
+}
+
+.content {
+  background-color: white;
+  width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+h1 {
+  background-color: hsla(0, 100%, 50%, 0.5);
+  text-align: center;
+  padding: 10px;
+  width: 900px;
+  margin: 20px auto;
+  border-radius: 4px;
+}
+
+p {
+  width: 900px;
+  margin: 20px auto;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+.part-opaque {
+  color: RGBA(255, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+th {
+  text-align: left;
+  background-color: RGBA(255, 0, 0, 0.2);
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin: 0 auto;
+  width: 900px;
+  background-color: RGBA(255, 0, 0, 0.1);
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#type {
+  width: 12%;
+}
+
+#syntax {
+  width: 33%;
+}
+
+#usage-notes {
+  width: 55%;
+}
+/* COMMENT */

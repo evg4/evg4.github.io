@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVG | CSS colours cheatsheet</title>
+    <link rel="stylesheet" href="Resources/css colours cheatsheet.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1>CSS colours</h1>
+      <p>
+        This table summarises the different ways of setting colours in CSS. Each
+        example shows how to render the colour
+        <span class="red">red with full opacity</span>. The two examples
+        featuring an Alpha value demonstrate the
+        <span class="part-opaque">slightly opaque version</span>.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col" id="type">Type</th>
+            <th scope="col" id="syntax">Syntax</th>
+            <th scope="col" id="usage-notes">Usage notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Named colours</td>
+            <td>color: red;</td>
+            <td>
+              There are 140 named colours to choose from, including standard
+              named like 'blue' and 'yellow, and more specific names like
+              'salmon' and 'plum'.
+            </td>
+          </tr>
+          <tr>
+            <td>Hexadecimal colours</td>
+            <td>color: #ff0000;</td>
+            <td>
+              This is based on a counting system made up of 16 digits. The
+              additional 6 digits are represented by a - f. Use a colour picker
+              or the tool in the text editor itself to choose the exact colour
+              you want.
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="2">RGB(A)</td>
+            <td>color: rgb(255, 0, 0);</td>
+            <td>
+              This stands for Red, Green, Blue, (Alpha), where Alpha is an
+              optional value between 0 and 1 to represent opacity. The first
+              three values can be anything between 0 and 255.
+            </td>
+          </tr>
+          <tr>
+            <td>color: rgba(255, 0, 0, 0.5);</td>
+            <td>
+              Here we have added the optional Alpha value. Notice we have to now
+              type "RGBA" instead of just "RGB". 0 is completely transparent and
+              1 is completely opaque.
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="2">HSL(A)</td>
+            <td>color: hsl(0, 100%, 50%);</td>
+            <td>
+              HSL stands for Hue, Saturation, and Lightness, where H refers to
+              the colour itself and S and L change the saturation and light to
+              result in different shades. We can use HSL to pick a set of
+              colours that work well together by selecting colours that have the
+              same lightness and saturation but different hue.
+            </td>
+          </tr>
+          <tr>
+            <td>color: hsla(0, 100%, 50%, 0.5);</td>
+            <td>
+              Just like with RGBA, the Alpha value can be between 0 (completely
+              transparent) and 1 (completely opaque). Again, don't forget to use
+              "HSLA" not "HSL".
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

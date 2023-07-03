@@ -1,0 +1,58 @@
+h1 {
+  margin: 20px auto;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+#team {
+  background-color: black;
+}
+
+.all-team-pics {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.team {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  margin: 5px;
+}
+
+.ceo {
+  background-image: url(Images/CEO.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.IT {
+  background-image: url(Images/IT-and-PM.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.HR {
+  background-image: url(Images/marketing-HR.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 0 10px;
+  display: none;
+}
+
+.team:hover {
+  .caption {
+    display: block;
+  }
+}

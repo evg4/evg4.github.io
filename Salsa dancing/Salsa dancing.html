@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <title>EVG | Salsa 💃</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(
+          120deg,
+          rgb(255, 255, 255) 3%,
+          rgb(235, 158, 98) 34.6%,
+          rgb(177, 10, 10) 63.7%,
+          rgb(0, 0, 0) 102%
+        );
+      }
+      .container {
+        display: block;
+        margin: 100px auto;
+        max-width: 800px;
+        border: 5px solid #45171d;
+        border-radius: 6px;
+        padding: 20px;
+        background: #fff;
+      }
+      h1 {
+        color: #e84a5f;
+        text-align: center;
+        font-weight: 700;
+        font-size: 45px;
+        margin: 20px 10px 5px 10px;
+      }
+      h2 {
+        text-align: center;
+        margin: 20px 10px 30px 10px;
+        font-size: 30px;
+        color: #ff847c;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      p {
+        line-height: 25px;
+        color: #45171d;
+      }
+      ul {
+        color: #45171d;
+      }
+      .reasons-headings {
+        margin: 2px 0px;
+      }
+
+      .reasons {
+        margin: 8px 0 20px 0;
+      }
+      button {
+        display: block;
+        margin: 30px auto;
+        padding: 10px;
+        font-size: 20px;
+        color: #e84a5f;
+        background: #fff;
+        border: 2px solid #e84a5f;
+        border-radius: 4px;
+        font-weight: bold;
+        box-shadow: 10px 10px 10px rgba(69, 23, 29, 0.5);
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        color: e84a5f;
+        background-color: #fff;
+        cursor: pointer;
+        font-size: 22px;
+        margin: 28px auto 29px auto;
+      }
+      span {
+        color: #45171d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Salsa dancing</h1>
+      <h2>Your new favourite hobby?</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/078/717/original/salsa_2.jpg?1682356247"
+        width="300px;"
+        alt="A man and woman dancing salsa"
+      />
+      <p>
+        Are you looking for a new hobby? Try salsa! There are different types,
+        from the fun and carefree Cuban salsa, also known as
+        <strong>casino</strong>, to elegant and classy
+        <strong>crossbody salsa</strong>. You can also dance as a team in a
+        <strong>rueda</strong>, where a <em>cantante</em> (singer) calls out the
+        names of the moves and everyone does them in sync. Or, if you prefer
+        dancing alone, you can practise your technique with
+        <strong>styling</strong> classes. Still not convinced? Below are some
+        more reasons for you to give it a try!
+      </p>
+      <ul>
+        <li>
+          <h3 class="reasons-headings">Keep fit</h3>
+          <p class="reasons">
+            Dancing is a natural and fun way to exercise - much better than
+            lifting weights in the gym! Because you're enjoying yourself, you
+            won't even notice that you're getting a cardio workout at the same
+            time.
+          </p>
+        </li>
+        <li>
+          <h3 class="reasons-headings">Make friends</h3>
+          <p class="reasons">
+            Dancing classes and socials are very sociable activities. You can
+            meet like-minded people who share a hobby with you, and count on
+            some familiar faces every time you go dancing. Plus, the salsa
+            community spans the whole country, so even if you go dancing in a
+            new place, you're sure to bump into somebody you know!
+          </p>
+        </li>
+        <li>
+          <h3 class="reasons-headings">Express yourself</h3>
+          <p class="reasons">
+            Once you get over any initial self-consciousness of learning a new
+            skill and trying it out in front of other people, dancing is a great
+            way to express yourself. Switch your brain off for a few hours and
+            let the music inspire you!
+          </p>
+        </li>
+      </ul>
+
+      <p>
+        Other popular dance styles are
+        <a href="https://en.wikipedia.org/wiki/Bachata_(dance)" target="_blank">
+          bachata</a
+        >
+        and
+        <a href="https://en.wikipedia.org/wiki/Kizomba" target="_blank"
+          >kizomba</a
+        >.
+      </p>
+      <button>Find out more!</button>
+      <br />
+
+      <hr />
+      <span
+        >Coded by
+        <a
+          href="https://www.linkedin.com/in/elizabeth-gardiner-513504129/"
+          target="
+        "
+          >Elizabeth Gardiner</a
+        ></span
+      >
+    </div>
+    <script>
+      function moreInfo() {
+        let name = prompt("What is your name?");
+        if (name.length > 0) {
+          alert(
+            "Hi " +
+              name +
+              "! Check out Adrian and Anita on YouTube to see some professional salsa dancers!"
+          );
+        } else {
+          alert(
+            "Hi! Check out Adrian and Anita on YouTube to see some professional salsa dancers!"
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", moreInfo);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVG | Form</title>
+    <link rel="stylesheet" href="Resources/form-style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sweets and chocolate survey</h1>
+    </header>
+    <main>
+      <form action="Resources/form-thank-you.html">
+        <h2>Survey</h2>
+        <h3>Help us gather opinions on the best sweets and chocolate.</h3>
+
+        <label for="name">1) What is your name?</label>
+        <input
+          required
+          type="text"
+          name="name"
+          id="name"
+          pattern="[a-zA-Z0-9]+"
+        />
+        <br />
+        <label for="age">2) How old are you?</label>
+        <input required type="number" name="age" id="age" min="0" max="100" />
+        <br />
+        <span>3a) Do you prefer sweets or chocolate?</span>
+        <br />
+        <label for="sweets">Sweets</label>
+        <input type="radio" value="sweets" name="sweets-or-choc" id="sweets" />
+        <label for="choc">Chocolate</label>
+        <input type="radio" value="chocolate" name="sweets-or-choc" id="choc" />
+        <br />
+        <label for="why"
+          >3b) Why is that your preference? Please be detailed.</label
+        ><br />
+        <textarea
+          name="why"
+          id="why"
+          cols="60"
+          rows="10"
+          minlength="50"
+          maxlength="500"
+          placeholder="Please write between 50 and 500 characters."
+        ></textarea>
+        <br />
+
+        <label for="freq">4) How often do you eat sweets or chocolate?</label
+        ><br />
+        <span>Not very often (monthly or less)</span>
+        <input type="range" name="freq" id="freq" />
+        <span>Very often (daily)</span>
+        <br />
+        <p>5) Which of the following do you like to eat?</p>
+        <div id="all-options">
+          <div class="column" id="col-1">
+            <label for="bueno">Kinder Bueno</label>
+            <input type="checkbox" name="choc-type" id="bueno" value="bueno" />
+            <br />
+            <label for="aero">Aero</label>
+            <input type="checkbox" name="choc-type" id="aero" value="aero" />
+            <br />
+            <label for="kitkat">Kitkat</label>
+            <input
+              type="checkbox"
+              name="choc-type"
+              id="kitkat"
+              value="kitkat"
+            />
+            <br />
+            <label for="mars">Mars Bar</label>
+            <input type="checkbox" name="choc-type" id="mars" value="mars" />
+            <br />
+            <label for="daim">Daim Bar</label>
+            <input type="checkbox" name="choc-type" id="daim" value="daim" />
+          </div>
+          <div class="column" id="col-2">
+            <label for="tangfastic">Tangfastic</label>
+            <input
+              type="checkbox"
+              name="choc-type"
+              id="tangfastic"
+              value="tangfastic"
+            />
+            <br />
+            <label for="hearts">Love Hearts</label>
+            <input
+              type="checkbox"
+              name="choc-type"
+              id="hearts"
+              value="hearts"
+            />
+            <br />
+            <label for="laces">Strawberry Laces</label>
+            <input type="checkbox" name="choc-type" id="laces" value="laces" />
+            <br />
+            <label for="pear-drops">Pear Drops</label>
+            <input
+              type="checkbox"
+              name="choc-type"
+              id="pear-drops"
+              value="pear-drops"
+            />
+            <br />
+            <label for="sherbert">Sherbert Fountain</label>
+            <input
+              type="checkbox"
+              name="choc-type"
+              id="sherbert"
+              value="sherbert"
+            />
+          </div>
+        </div>
+        <br />
+        <label for="">6) Where do you prefer to buy confectionary?</label>
+        <select name="where" id="where">
+          <option value="supermarket">Supermarket</option>
+          <option value="corner-shop">Corner shop</option>
+          <option value="online">Online</option>
+          <option value="gift-shop">Gift shop</option>
+          <option value="pharmacy">Pharmacy</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+        <label for="word"
+          >7) What word do you most associate with eating confectionary? Pick
+          one or type your own.</label
+        >
+        <input required type="text" name="word" id="word" list="words" />
+        <datalist id="words">
+          <option value="Relaxing"></option>
+          <option value="Bliss"></option>
+          <option value="Tasty"></option>
+        </datalist>
+        <br />
+        <label for="dislike"
+          >8) What is your least favourite chocolate bar? (Don't worry, we'll
+          keep it a secret)</label
+        >
+        <input type="password" name="dislike" id="dislike" />
+        <br />
+        <br />
+        <input
+          type="submit"
+          name="submit"
+          id="submit"
+          value="Complete survey"
+        />
+        <p id="note">
+          <em>Please note: answers are not actually sent anywhere. </em>
+        </p>
+      </form>
+    </main>
+    <footer>
+      Image sourced from
+      <a href="https://unsplash.com/" target="_blank">Unsplash</a>.
+    </footer>
+  </body>
+</html>

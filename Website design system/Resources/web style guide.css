@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(52, 52, 59);
+  font-family: arial, sans-serif;
+  background-color: rgb(255, 240, 245);
+}
+
+h1 {
+  margin: 20px 10px;
+  font-family: candara, futura, sans-serif;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h2,
+h3 {
+  font-family: candara, futura, sans-serif;
+}
+
+a {
+  color: rgb(52, 52, 59);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  font-weight: bold;
+}
+
+section {
+  border: 1px solid rgb(52, 52, 59);
+  margin: 20px 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.all-colours,
+.all-fonts {
+  width: 100%;
+}
+.colour-box {
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.pink {
+  background-color: rgb(255, 192, 203);
+  color: rgb(52, 52, 59);
+}
+
+.lavender {
+  background-color: rgb(255, 240, 245);
+  color: rgb(52, 52, 59);
+}
+
+.light-gray {
+  background-color: rgb(211, 211, 211);
+  color: rgb(52, 52, 59);
+}
+
+.dark-gray {
+  background-color: rgb(52, 52, 59);
+  color: rgb(255, 240, 245);
+}
+
+.font-box {
+  display: inline-block;
+  width: 30%;
+  height: 200px;
+  text-align: center;
+  padding: 5px;
+}
+
+.candara {
+  font-family: candara;
+}
+
+.arial,
+.arial h3 {
+  font-family: arial;
+}
+
+.courier-new,
+.courier-new h3 {
+  font-family: "courier new";
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#text-styles h1 {
+  margin-left: 0px;
+}

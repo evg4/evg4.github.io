@@ -1,0 +1,163 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c1d3ad;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #2d511b;
+  z-index: 1;
+}
+
+h1 {
+  padding: 1rem;
+  color: #2d511b;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 1rem;
+}
+
+li {
+  padding: 1rem;
+}
+
+a {
+  color: #2d511b;
+}
+
+/* Main */
+
+main,
+footer {
+  position: relative;
+  top: 115px;
+}
+
+/* Mission */
+
+#mission {
+  background-image: url(Images/mission-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#mission h2,
+#mission h3 {
+  text-align: center;
+  color: #c1d3ad;
+}
+
+/* Services */
+
+#services h2,
+#services h3 {
+  color: #2d511b;
+}
+
+.services-boxes {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.row-1,
+.row-2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#services img {
+  width: 100%;
+  padding: 1rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5 {
+  width: 30rem;
+}
+
+/* Team */
+
+#team {
+  background-image: url(Images/mission-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#team h2 {
+  padding-top: 50px;
+  color: #c1d3ad;
+}
+
+.team-photos {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#team figure {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#team img {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#team figcaption {
+  text-align: centre;
+  width: 300px;
+  color: #c1d3ad;
+}
+
+.ceo,
+.IT,
+.HR {
+  margin: 30px auto;
+}
+
+/* Footer */
+
+footer {
+  padding: 1rem;
+  color: #c1d3ad;
+  background-color: black;
+  border-top: 1px solid #c1d3ad;
+  display: flex;
+  justify-content: space-between;
+}

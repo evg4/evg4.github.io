@@ -1,0 +1,84 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url("Images/Sweets.jpg");
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1,
+#thank-you {
+  color: black;
+  border: 5px solid rgb(235, 98, 194);
+  border-radius: 5px;
+  background-color: white;
+  opacity: 0.7;
+  max-width: 870px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+form {
+  line-height: 35px;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  width: fit-content;
+  font-weight: bold;
+  border: 5px solid rgb(235, 98, 194);
+}
+
+#all-options {
+  display: flex;
+}
+
+.column {
+  margin-right: 20px;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid rgb(235, 98, 194);
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#submit:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#submit:active {
+  opacity: 0.5;
+}
+
+#note {
+  text-align: center;
+}
+
+footer {
+  padding: 10px;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
